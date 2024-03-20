@@ -6,7 +6,7 @@
 /*   By: beiglesi <beiglesi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 09:18:17 by beiglesi          #+#    #+#             */
-/*   Updated: 2024/03/18 12:59:20 by beiglesi         ###   ########.fr       */
+/*   Updated: 2024/03/20 12:42:10 by beiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,13 @@
 # define FALSE 0
 # define INT_MIN -2147483648
 # define INT_MAX 2147483647
-typedef struct s_list
+typedef struct s_pslist
 {
 	int 	size;
 	struct s_node	*first;
 	struct s_node	*last;
 	struct s_node	*cheapest;
-}					t_list;
+}					t_pslist;
 
 typedef struct s_node
 {
@@ -41,6 +41,11 @@ typedef struct s_node
 	struct s_node *prev;
 }				t_node;
 
+
+/*main.c*/
+void	read_params(int argc, char **argv);
+void	create_stack(char **str);
+int 	error_notnumber (char *str);
 
 /* push_swap_utils.c*/
 void error(int error);

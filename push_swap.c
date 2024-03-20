@@ -6,7 +6,7 @@
 /*   By: beiglesi <beiglesi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 11:54:36 by beiglesi          #+#    #+#             */
-/*   Updated: 2024/03/18 13:03:17 by beiglesi         ###   ########.fr       */
+/*   Updated: 2024/03/20 12:39:31 by beiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ t_list read_params(int argc, char **argv)
 	else if(argc == 2)
 	{
 		numbers = ft_split(argv[1], ' ');
+
 		list = create_stack(numbers);
 		//HAY QUE FREE NUMBERS		
 
@@ -45,6 +46,32 @@ t_list read_params(int argc, char **argv)
 
 
 }
+
+int error_notnumber (char *str)
+{
+	if(*str != '+' || *str != '-' || (*str <= '0' && *str >= '9'))
+		return(1);
+	if(*str == '+' || *str == '-' && !(str[1] >= '0' && str[1] <='9'))
+		return(1);
+	while(*str++)
+	{
+		if(!(str[1] >= '0' && str[1] <='9'))
+			return(1);
+	}
+	return(0);
+}
+
+
+void stack_init(t_list *stack_a, char **argv)
+{
+
+
+
+}
+
+
+
+
 
 
 t_list create_stack(char **numbers)
@@ -60,7 +87,7 @@ t_list create_stack(char **numbers)
 	while(*numbers)
 	{
 		if(!list->first)
-			ps_lstnew(list, ft_ato)
+			ps_lstnew(list, )
 // ME HE QUEDADO AQUÍ, AÑADIENDO A LA LISTA EL NÚMERO CHECKEADO POR ATOI
 // QUE SEA UN INTEGER, QUE NO HAYA CARACTERES NO NÚMERICOS
 // TENGO QUE AÑADIR A LA LISTA Y CHECKEAR QUE NO HAYA DUPLICIDAD
