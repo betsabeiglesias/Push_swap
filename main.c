@@ -6,7 +6,7 @@
 /*   By: beiglesi <beiglesi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:19:35 by beiglesi          #+#    #+#             */
-/*   Updated: 2024/03/20 12:42:47 by beiglesi         ###   ########.fr       */
+/*   Updated: 2024/03/20 13:03:19 by beiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,27 @@ int main(int argc, char **argv)
 }
 
 
-void	read_params(int argc, char **argv)
+void	check_params(int argc, char **argv)
 {
-	char **numbers;
+	char **args;
+	int i;
 	//t_list *stack;
 
-	if(argc == 1)
-		error(NO_ARGS);
-	else if(argc == 2)
+	if(argc == 2)
+		args = ft_split(argv[1], ' ');
+	else
 	{
-		numbers = ft_split(argv[1], ' ');
-		create_stack(numbers);
+		i = 1;
+		args = argv;
 	}
+	while(args[i])
+	{
+
+
+
+	}
+
+
 }
 
 void	create_stack(char **str)
@@ -60,7 +69,7 @@ void	create_stack(char **str)
 
 }
 
-int error_notnumber (char **str)
+int error_notnumber (char *str)
 {
 	if(*str != '+' || *str != '-' || (*str <= '0' && *str >= '9'))
 		return(1);
