@@ -6,7 +6,7 @@
 /*   By: beiglesi <beiglesi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 11:54:36 by beiglesi          #+#    #+#             */
-/*   Updated: 2024/03/20 13:03:21 by beiglesi         ###   ########.fr       */
+/*   Updated: 2024/03/23 14:19:00 by beiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,30 +46,6 @@ t_list read_params(int argc, char **argv)
 
 
 }
-
-int error_notnumber (char *str)
-{
-	if(*str != '+' || *str != '-' || (*str <= '0' && *str >= '9'))
-		return(1);
-	if(*str == '+' || *str == '-' && !(str[1] >= '0' && str[1] <='9'))
-		return(1);
-	while(*str++)
-	{
-		if(!(str[1] >= '0' && str[1] <='9'))
-			return(1);
-	}
-	return(0);
-}
-
-
-void stack_init(t_list *stack_a, char **argv)
-{
-
-
-
-}
-
-
 
 
 

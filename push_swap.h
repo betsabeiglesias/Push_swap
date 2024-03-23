@@ -6,7 +6,7 @@
 /*   By: beiglesi <beiglesi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 09:18:17 by beiglesi          #+#    #+#             */
-/*   Updated: 2024/03/20 12:42:10 by beiglesi         ###   ########.fr       */
+/*   Updated: 2024/03/23 13:19:04 by beiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ typedef struct s_node
 
 
 /*main.c*/
-void	read_params(int argc, char **argv);
-void	create_stack(char **str);
-int 	error_notnumber (char *str);
+void		check_params(int argc, char **argv);
+t_pslist	create_stack(char **str);
+int 		error_notnumber (char *str);
 
 /* push_swap_utils.c*/
 void error(int error);
