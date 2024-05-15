@@ -1,4 +1,4 @@
-# Push_swap: Ordenando Stacks
+# 42 Push_swap: Ordenando Stacks
 
 ## Introducción
 El proyecto Push_swap plantea el desafío de ordenar datos en stacks utilizando un conjunto limitado de instrucciones. Al inicio, se proporciona un stack a que contiene una cantidad aleatoria de números positivos y/o negativos, sin duplicados, mientras que el stack b se encuentra vacío. El objetivo es ordenar los números en el stack a en orden ascendente, minimizando la cantidad de acciones necesarias.
