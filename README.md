@@ -3,7 +3,7 @@
 ## Introducción
 El proyecto Push_swap plantea el desafío de ordenar datos en stacks utilizando un conjunto limitado de instrucciones. Al inicio, se proporciona un stack a que contiene una cantidad aleatoria de números positivos y/o negativos, sin duplicados, mientras que el stack b se encuentra vacío. El objetivo es ordenar los números en el stack a en orden ascendente, minimizando la cantidad de acciones necesarias.
 
-## ⚠️ Aviso: No copies/pegues nada que no entiendas: es perjudicial para ti y para la escuela.
+#### ⚠️ Aviso: No copies/pegues nada que no entiendas: es perjudicial para ti y para la escuela.
 
 ## Objetivos
 Este proyecto ofrece la oportunidad de explorar y comprender los algoritmos de ordenamiento, así como la complejidad asociada con ellos. Ordenar datos eficientemente es un aspecto fundamental en el desarrollo de software, y este proyecto proporciona una plataforma para adquirir experiencia práctica en este campo.
